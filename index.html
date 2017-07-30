@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .error {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="./request/success.json" id="myForm" method="POST">
+        <label for="">Имя <span class="error-title" name="fio"></span><br><input type="text" name="fio" value='Вася Петров Первый'></label><br>
+        <label for="">Email <span class="error-title" name="email"></span><br><input type="text" name="email"  value='132@ya.ru'></label><br>
+        <label for="">Телефон <span class="error-title"  name="phone"></span><br><input type="text" name="phone" value="+7(123)123-11-11"></label><br>
+
+        <br>
+        <input type="submit" value="Отправить" id="submitButton">
+        <div id="resultContainer"></div>
+    </form>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
